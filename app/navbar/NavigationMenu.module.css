@@ -1,0 +1,84 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.menus {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.primaryMenu {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  flex-direction: row;
+  display: block;
+}
+
+.primaryMenu:hover {
+  color: rgb(142, 115, 45);
+}
+
+.active {
+  border-bottom: solid;
+  color: rgb(142, 115, 45);
+}
+
+.hamburger {
+  display: none;
+}
+
+.secondaryMenuLink {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+.secondaryMenuLink:hover {
+  color: rgb(142, 115, 45);
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+
+  .primaryNavigation {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .primaryNavigation.close {
+    display: none;
+  }
+
+  .secondaryNavigationContainer {
+    overflow-x: scroll;
+  }
+
+  .primaryMenuList {
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+
+.primaryNavigation.open {
+  transform: translateX(0);
+}
+}

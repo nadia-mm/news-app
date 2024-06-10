@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NEWS APP
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
 # or
+yarn install
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## The Task
 
-To learn more about Next.js, take a look at the following resources:
+Create the frontend of a small dynamic news website. The website should contain these components and views:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+News Overview: This view shows a small aggregation of all available news articles. The news articles should be loaded via Ajax or similar from a JSON source. For this task, a complex data store can simply be substituted by a static json file with a couple of news articles containing mock content. In a real world application, this json file would of course be replaced by the api of a cms or a complex data service.
+The list should contain some form of pagination and not require any page reloads during navigation.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+News Detail: If the user clicks on a news article on the overview, the detailed view of the selected news article is shown. This view shows all content and attributes of that article. This view is also a dynamic component of your frontend and should ideally also not require a page load of the web browser.
 
-## Deploy on Vercel
+Design / Layout: Design and layout is not important, it should however be responsive and adapt to desktop or mobile screen sizes respectively and show some form of effects or transitions during user interaction. Again, the goal of this task is not to provide a nice looking interface but to show that you can work with dynamic webpages and know what a responsive approach is.
+If you need inspiration or guidelines on how such a site could look, you can use www.gq-magazin.de as a rough guideline.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Navigation: the website should contain a navigation bar with two levels. The second level is only shown if a user clicks on the first level. It is enough for this task if you use a dummy menu without any real use.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Please try to focus on the following technologies:
+
+- React
+- AJAX + JSON ( all articles can reside in a static json file )
+- CSS3 / Responsive Design
+- HTML5 and semantic tags
+- OpenGraph and SEO relevant tags
+
+![](https://github.com/nadia-mm/news-app/blob/main/demo/lighthouse-tech-menu.jpg)

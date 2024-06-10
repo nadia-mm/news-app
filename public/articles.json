@@ -1,0 +1,116 @@
+{
+  "limit":2,
+  "count":10,
+  "results": [
+    {
+      "id": 1,
+      "title": "Title 1",
+      "summary": "Summary of article 1",
+      "content": "Full content of article 1",
+      "author": "Author 1",
+      "publishedDate": "2024-06-01",
+      "menu": "Mode",
+      "subMenu": "Mode-News",
+      "imageUrl": "https://static1.gensler.com/uploads/hero_element/7169/thumb_desktop/thumbs/conde-nast_1024x576_01_1439926143_1024x576.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Title 2",
+      "summary": "Summary of article 2",
+      "content": "Full content of article 2",
+      "author": "Author 2",
+      "publishedDate": "2024-06-02",
+      "menu": "Mode",
+      "subMenu": "Mode-News",
+      "imageUrl": "https://static1.gensler.com/uploads/hero_element/7169/thumb_desktop/thumbs/conde-nast_1024x576_01_1439926143_1024x576.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Title 3",
+      "summary": "Summary of article 3",
+      "content": "Full content of article 3",
+      "author": "Author 3",
+      "publishedDate": "2024-06-03",
+      "menu": "Mode",
+      "subMenu": "Modetrends",
+      "imageUrl": "https://static1.gensler.com/uploads/hero_element/7169/thumb_desktop/thumbs/conde-nast_1024x576_01_1439926143_1024x576.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Title 4",
+      "summary": "Summary of article 4",
+      "content": "Full content of article 4",
+      "author": "Author 4",
+      "publishedDate": "2024-06-04",
+      "menu": "Mode",
+      "subMenu": "Modetrends",
+      "imageUrl": "https://static1.gensler.com/uploads/hero_element/7169/thumb_desktop/thumbs/conde-nast_1024x576_01_1439926143_1024x576.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Title 5",
+      "summary": "Summary of article 5",
+      "content": "Full content of article 5",
+      "author": "Author 5",
+      "publishedDate": "2024-06-05",
+      "menu": "Mode",
+      "subMenu": "Uhren",
+      "imageUrl": "https://static1.gensler.com/uploads/hero_element/7169/thumb_desktop/thumbs/conde-nast_1024x576_01_1439926143_1024x576.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Title 6",
+      "summary": "Summary of article 6",
+      "content": "Full content of article 6",
+      "author": "Author 6",
+      "publishedDate": "2024-06-06",
+      "menu": "Mode",
+      "subMenu": "Uhren",
+      "imageUrl": "https://static1.gensler.com/uploads/hero_element/7169/thumb_desktop/thumbs/conde-nast_1024x576_01_1439926143_1024x576.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Title 7",
+      "summary": "Summary of article 7",
+      "content": "Full content of article 7",
+      "author": "Author 7",
+      "publishedDate": "2024-06-07",
+      "menu": "Tech",
+      "subMenu": "News",
+      "imageUrl": "https://static1.gensler.com/uploads/hero_element/7169/thumb_desktop/thumbs/conde-nast_1024x576_01_1439926143_1024x576.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Title 8",
+      "summary": "Summary of article 8",
+      "content": "Full content of article 8",
+      "author": "Author 8",
+      "publishedDate": "2024-06-08",
+      "menu": "Tech",
+      "subMenu": "News",
+      "imageUrl": "https://static1.gensler.com/uploads/hero_element/7169/thumb_desktop/thumbs/conde-nast_1024x576_01_1439926143_1024x576.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Title 9",
+      "summary": "Summary of article 9",
+      "content": "Full content of article 9",
+      "author": "Author 9",
+      "publishedDate": "2024-06-09",
+      "menu": "Tech",
+      "subMenu": "Ratgeber",
+      "imageUrl": "https://static1.gensler.com/uploads/hero_element/7169/thumb_desktop/thumbs/conde-nast_1024x576_01_1439926143_1024x576.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Title 10",
+      "summary": "Summary of article 10",
+      "content": "Full content of article 10",
+      "author": "Author 10",
+      "publishedDate": "2024-06-10",
+      "menu": "Tech",
+      "subMenu": "Ratgeber",
+      "imageUrl": "https://static1.gensler.com/uploads/hero_element/7169/thumb_desktop/thumbs/conde-nast_1024x576_01_1439926143_1024x576.jpg"
+    }
+  ]
+}
