@@ -3,9 +3,11 @@
 ## Getting Started
 
 ```bash
+git clone https://github.com/nadia-mm/news-app.git
 npm install
 npm run dev
 # or
+git clone https://github.com/nadia-mm/news-app.git
 yarn install
 yarn dev
 ```
