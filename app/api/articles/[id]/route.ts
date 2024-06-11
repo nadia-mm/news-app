@@ -14,12 +14,17 @@ export async function GET(req: NextRequest) {
   const articles = await readArticles();
 
   const articleId = extractNumberFromUrl(new URL(req.url).pathname);
+
   if (articleId) {
     const article =
-      articles.results &&
-      articles.results.find((article: Article) => article.id === articleId);
-    return NextResponse.json(article);
+    articles.results &&
+    articles.results.find((article: Article) => article.id === articleId);
+    if (article) {
+      return NextResponse.json(article);
+    } else {
+      return NextResponse.json({ error: "Article not found" }, { status: 404 });
+    }
   } else {
-    return null;
+    return NextResponse.json({ error: "Invalid article ID" }, { status: 400 });
   }
 }
