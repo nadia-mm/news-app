@@ -17,7 +17,7 @@ const ArticleCard = ({
       <article className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <div className="relative w-full h-48">
           <Image
-            src={imageSrc}
+            src={imageUrl}
             alt="Conde Nast Office"
             fill
             className="rounded-t-lg"
@@ -30,7 +30,7 @@ const ArticleCard = ({
           <h5 className="text-lg font-bold text-gray-900 dark:text-white">
             {title}
           </h5>
-          <p className="text-sm text-gray-500 dark:text-gray-400">{author}</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400 font-bold">By {author}</p>
           <p className="text-sm text-gray-500 dark:text-gray-400">
             {format(new Date(publishedDate), "dd.MM.yyyy")}
           </p>

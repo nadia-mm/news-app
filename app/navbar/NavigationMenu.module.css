@@ -25,6 +25,10 @@
   color: rgb(142, 115, 45);
 }
 
+.primaryMenuHeader {
+  display: none;
+}
+
 .active {
   border-bottom: solid;
   color: rgb(142, 115, 45);
@@ -49,6 +53,11 @@
 @media screen and (max-width: 600px) {
   .hamburger {
     display: block;
+  }
+  
+  .primaryMenuHeader {
+    display: block;
+    text-align: center;
   }
 
   .primaryNavigation {
@@ -81,4 +90,5 @@
 .primaryNavigation.open {
   transform: translateX(0);
 }
+
 }

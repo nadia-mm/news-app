@@ -119,7 +119,7 @@ const NavigationMenu = () => {
         >
           {activePrimaryMenu === "mode" && (
             <div>
-              <h3 className="text-center">MODE</h3>
+              <h3 className={styles.primaryMenuHeader}>MODE</h3>
               <ul className={clsx(styles.menus, styles.secondaryNavigation)}>
                 <li>
                   <Link
@@ -174,7 +174,7 @@ const NavigationMenu = () => {
           )}
           {activePrimaryMenu === "tech" && (
             <div>
-              <h3 className="text-center">TECH</h3>
+              <h3 className={styles.primaryMenuHeader}>TECH</h3>
               <ul className={clsx(styles.menus, styles.secondaryNavigation)}>
                 <li>
                   <Link
