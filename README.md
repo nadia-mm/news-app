@@ -14,6 +14,15 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Running tests
+
+```bash
+npm run test
+# or
+yarn test
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
 ## The Task
@@ -38,4 +47,4 @@ Please try to focus on the following technologies:
 - HTML5 and semantic tags
 - OpenGraph and SEO relevant tags
 
-![](https://github.com/nadia-mm/news-app/blob/main/demo/lighthouse-tech-menu.jpg)
+![](https://github.com/nadia-mm/news-app/blob/main/demo/lighthouse.jpg)
