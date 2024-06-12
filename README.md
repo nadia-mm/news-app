@@ -47,7 +47,7 @@ Please try to focus on the following technologies:
 - HTML5 and semantic tags
 - OpenGraph and SEO relevant tags
 
-### Demo destkop
+### Demo desktop
 ![](https://github.com/nadia-mm/news-app/blob/main/demo/demo-desktop.jpg)
 
 ### Demo mobile
