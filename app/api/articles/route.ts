@@ -6,6 +6,6 @@ export async function GET() {
     process.cwd() + "/public/articles.json",
     "utf8"
   );
-  const articles= JSON.parse(file);
+  const articles = JSON.parse(file);
   return NextResponse.json(articles);
 }

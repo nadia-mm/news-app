@@ -12,17 +12,6 @@ export type Article = {
   imageUrl: string;
 };
 
-export type Menu = {
-  title: string;
-  link: string;
-  subMenus: Menu[];
-};
-
-export type SubMenu = {
-  title: string;
-  link: string;
-};
-
 export type ArticleResponse = {
   limit: number;
   count: number;

@@ -1,7 +1,13 @@
 import { fetchData } from "@/utils/fetchData";
 import { Article, ArticleResponse } from "@/models/types";
-import { IArticleCardListByMenuAndSubmenu } from "@/models/interfaces";
 import PaginationPage from "@/app/pagination/PaginationPage";
+
+interface IArticleCardListByMenuAndSubmenu {
+  params: {
+    menu: string;
+    submenu: string;
+  };
+}
 
 const ArticleCardListByMenuAndSubmenu = async ({
   params,

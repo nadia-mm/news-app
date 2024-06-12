@@ -1,7 +1,13 @@
 "use client";
 
 import { useRouter, useSearchParams } from "next/navigation";
-import { IPaginationButtonControls } from "@/models/interfaces";
+
+interface IPaginationButtonControls {
+  hasNextPage: boolean;
+  hasPrevPage: boolean;
+  count: number;
+  limit: number;
+}
 
 const PaginationButtonControls = ({
   hasNextPage,

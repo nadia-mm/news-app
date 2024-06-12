@@ -1,13 +1,18 @@
 import { fetchData } from "@/utils/fetchData";
 import { Article, ArticleResponse } from "@/models/types";
-import { IArticleCardListByMenu } from "@/models/interfaces";
 import PaginationPage from "../pagination/PaginationPage";
+
+interface IArticleCardListByMenu {
+  params: {
+    menu: string;
+  };
+}
 
 const ArticleCardListByMenu = async ({ params }: IArticleCardListByMenu) => {
   const { menu } = params;
 
   const data: ArticleResponse = await fetchData(
-    `${process.env.API_ARTICLES_URL }`
+    `${process.env.API_ARTICLES_URL}`
   );
   const { limit, results } = data;
 

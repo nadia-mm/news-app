@@ -17,8 +17,8 @@ export async function GET(req: NextRequest) {
 
   if (articleId) {
     const article =
-    articles.results &&
-    articles.results.find((article: Article) => article.id === articleId);
+      articles.results &&
+      articles.results.find((article: Article) => article.id === articleId);
     if (article) {
       return NextResponse.json(article);
     } else {

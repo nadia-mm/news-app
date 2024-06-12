@@ -1,9 +1,14 @@
 "use client";
-import { IPaginationPage } from "@/models/interfaces";
 import ArticleCard from "../articles/ArticleCard";
 import PaginationButtonControls from "./PaginationButtonControls";
 import { useSearchParams } from "next/navigation";
 import { format } from "date-fns";
+import { Article } from "@/models/types";
+
+interface IPaginationPage {
+  data: Article[];
+  limit: number;
+}
 
 const PaginationPage = ({ limit, data }: IPaginationPage) => {
   const searchParams = useSearchParams();
@@ -19,17 +24,19 @@ const PaginationPage = ({ limit, data }: IPaginationPage) => {
   return (
     <div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        {entries.map(({ id, rubricName, title, author, publishedDate, imageUrl }) => (
-          <ArticleCard
-            key={id}
-            id={id}
-            rubricName={rubricName}
-            title={title}
-            author={author}
-            publishedDate={format(new Date(publishedDate), "dd.MM.yyyy")}
-            imageUrl={imageUrl}
-          />
-        ))}
+        {entries.map(
+          ({ id, rubricName, title, author, publishedDate, imageUrl }) => (
+            <ArticleCard
+              key={id}
+              id={id}
+              rubricName={rubricName}
+              title={title}
+              author={author}
+              publishedDate={format(new Date(publishedDate), "dd.MM.yyyy")}
+              imageUrl={imageUrl}
+            />
+          )
+        )}
       </div>
       <div className="flex justify-center items-center mt-4">
         <PaginationButtonControls

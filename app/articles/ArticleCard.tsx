@@ -1,8 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
-import { IArticleCard } from "@/models/interfaces";
-import imageSrc from "../../public/conde-nast-office.jpg";
 import { format } from "date-fns";
+
+interface IArticleCard {
+  id: number;
+  rubricName: string;
+  title: string;
+  author: string;
+  imageUrl: string;
+  publishedDate: string;
+}
 
 const ArticleCard = ({
   id,
@@ -10,7 +17,7 @@ const ArticleCard = ({
   title,
   author,
   publishedDate,
-  imageUrl
+  imageUrl,
 }: IArticleCard) => {
   return (
     <Link href={`/articles/${id}`}>
@@ -30,7 +37,9 @@ const ArticleCard = ({
           <h5 className="text-lg font-bold text-gray-900 dark:text-white">
             {title}
           </h5>
-          <p className="text-sm text-gray-500 dark:text-gray-400 font-bold">By {author}</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400 font-bold">
+            By {author}
+          </p>
           <p className="text-sm text-gray-500 dark:text-gray-400">
             {format(new Date(publishedDate), "dd.MM.yyyy")}
           </p>

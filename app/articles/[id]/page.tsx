@@ -1,9 +1,14 @@
 import Image from "next/image";
 import { fetchData } from "@/utils/fetchData";
-import { IArticlePage } from "@/models/interfaces";
 import imageSrc from "../../../public/conde-nast-office.jpg";
 import { format } from "date-fns";
 import { Metadata } from "next";
+
+interface IArticlePage {
+  params: {
+    id: string;
+  };
+}
 
 export async function generateMetadata({
   params,
