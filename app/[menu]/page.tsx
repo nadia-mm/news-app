@@ -1,5 +1,5 @@
 import { fetchData } from "@/utils/fetchData";
-import { Article, ArticleResponse } from "@/models/types";
+import { Article, ArticleResponse } from "@/app/types";
 import PaginationPage from "../pagination/PaginationPage";
 
 interface IArticleCardListByMenu {

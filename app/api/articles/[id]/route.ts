@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Article } from "@/models/types";
+import { Article } from "@/app/types";
 import { readArticles } from "@/utils/readArticles";
 
 function extractNumberFromUrl(url: string): Number | null {

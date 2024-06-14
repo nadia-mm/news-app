@@ -3,7 +3,7 @@ import ArticleCard from "../articles/ArticleCard";
 import PaginationButtonControls from "./PaginationButtonControls";
 import { useSearchParams } from "next/navigation";
 import { format } from "date-fns";
-import { Article } from "@/models/types";
+import { Article } from "@/app/types";
 
 interface IPaginationPage {
   data: Article[];
